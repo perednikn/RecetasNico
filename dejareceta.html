@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartí una receta</title>
+
+  <!--SEO-->
+  <meta name="title" content="RecetasN">
+  <meta name="description" content="En este espacio podés recomendarme tu receta favorita">
+  <meta name="keywords" content="Recomendacion, Receta, Favorita, Nicolás, Perednik, Tips, dificultad">
+  <meta name="author" content="Nicolás Perednik">
+
+
+  <!-- Open Graph-->
+  <!--Información para cuando la página es compartida por una red social-->
+  <meta property="og:locale" content="Es_es">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RecetasN">
+  <meta property="og:description" content="Recomendá una receta">
+  <meta property="og:url" content="https://recetasN.com.ar">
+  <meta property="og:image" content="/Imagenes/banner/delivery.png">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- CSS Links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" , type="text/css" , href="CSS/Style.css">
+</head>
+
+<body class="recomendacionFondo">
+  <!--Arranca Header-->
+  <header id="header" class="fixed-top header-inner-pages">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <h1 class="logo"><a href="index.html">RecetasN<span>. - Compartí</span></a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto itemMenu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recetas.html">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="deliverys.html">Deliverys</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Compartí
+            </a>
+            <div class="dropdown-menu dropdownFondo" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="dejadelivery.html">Un Delivery</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+
+
+  </header>
+  <!-- End Header -->
+
+  <main>
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Recomendá una receta</h2>
+          <ol>
+            <li>Compartí</a></li>
+            <li>Receta</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <form class="container recomendacionFormulario">
+      <!--Datos Usuario Recomendador-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="tuNombreDelivery">Tu nombre:</label>
+          <input type="text" class="form-control" id="tuNombreDelivery" placeholder="Nicolás Perednik">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="tuMailDelivery">Tu mail:</label>
+          <input type="email" class="form-control" id="tuMailDelivery" placeholder="perednikn@gmail.com">
+        </div>
+      </div>
+      <!--Datos Delivery-->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="recetaNombre">Nombre Receta:</label>
+          <input type="text" class="form-control" id="recetaNombre" placeholder="Shakshuka">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="recetaPorciones">¿Para cuántas porciones rinde tu receta?</label>
+          <select id="recetaPorciones" class="form-control">
+            <option selected> 1 - Para comer sólo</option>
+            <option>2 - Para cena íntima</option>
+            <option>3 - Para amigos</option>
+            <option>4 - Para familia tipo</option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <fieldset class="marcoDificultad">
+            <label for="recetaDificultad">¿Qué nivel de dificultad tiene tu receta?</label>
+            <div class="form-check row">
+              <input class="recetaDificultad" type="radio" name="recetaDificultad" id="Dificultad" value="option1"
+                checked>
+              <label class="recetaDificultad" for="Baja">
+                Baja
+              </label>
+
+              <input class="recetaDificultad" type="radio" name="recetaDificultad" id="Dificultad">
+              <label class="recetaDificultad" for="Media">
+                Media
+              </label>
+
+              <input class="recetaDificultad" type="radio" name="recetaDificultad" id="Dificultad">
+              <label class="recetaDificultad" for="Alta">
+                Alta
+              </label>
+
+              <input class="recetaDificultad" type="radio" name="recetaDificultad" id="Dificultad">
+              <label class="recetaDificultad" for="Mastercheff">
+                Masterchef
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="recetaPrecio">¿Cuánto cuesta hacer tu receta?</label>
+          <select class="form-control">
+            <option selected>$ - Para cualquier día</option>
+            <option>$$ - Para darse un gustito</option>
+            <option>$$$ - Para ocasiones espaciales</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="recetaIngredientes">¿Qué ingredientes lleva?</label>
+          <textarea class="form-control rounded-0" id="recetaIngredientes" placeholder="¡Con cantidades!"></textarea>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="recetaProcedimiento">¿Cómo se prepara este plato?</label>
+          <textarea class="form-control rounded-0" id="recetaProcedimiento"
+            placeholder="Mi tip secreto es..."></textarea>
+
+        </div>
+
+      </div>
+      <div class="form-row d-flex justify-content-center">
+
+        <div class="form-group">
+          <button type="reset" class="btn btn-primary">Limpiar Formulario </button>
+
+          <button type="submit" class="btn btn-primary">Enviar Recomendación</button>
+        </div>
+
+      </div>
+
+
+    </form>
+
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+
+          <div>
+            <div class="footer-info">
+              <h3>de Nicolás Perednik<span>.</span></h3>
+              <p>
+                Villa Urquiza <br>
+                CABA, Argentina<br><br>
+                <strong>Teléfono:</strong> +54 9 1132021096<br>
+                <strong>Email:</strong> <a href="mailto:perednikn@gmail.com">perednikn@gmail.com</a><br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="http://www.twitter.com/asimasfacil" class="twitter" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com/asimasfacil" class="instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5491132021096" class="whatsapp" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Navegá en mi web</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="recetas.html">Recetas</a></li>
+              <li><a href="deliverys.html">Deliverys</a></li>
+              <li><a href="dejareceta.html">Dejá una receta</a></li>
+              <li><a href="dejareceta.html">Dejá un delivery</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyleft <strong><span>NP</span></strong>. <br> Todas las recetas son para compartir
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/72e75abc71.js" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

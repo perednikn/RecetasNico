@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deliverys</title>
+
+  <!--SEO-->
+  <meta name="description" content="En esta página encontrarás mis deliverys favoritos">
+  <meta name="keywords"
+    content="recetas, Nicolás, Perednik, Recomendar, Proyecto, primera web, pizza, arroz, favoritos, deliverys">
+  <meta name="author" content="Nicolás Perednik">
+
+
+  <!-- Open Graph-->
+  <!--Información para cuando la página es compartida por una red social-->
+  <meta property="og:locale" content="Es_es">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RecetasN">
+  <meta property="og:description" content="Mis recetas">
+  <meta property="og:url" content="https://recetasN.com.ar">
+  <meta property="og:image" content="/Imagenes/banner/delivery.png">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+  <!-- CSS Links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" , type="text/css" , href="CSS/Style.css">
+
+</head>
+
+<body>
+
+  <!--Arranca Header-->
+  <header id="header" class="fixed-top header-inner-pages">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <h1 class="logo"><a href="index.html">RecetasN<span>. - Deliverys</span></a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto itemMenu">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recetas.html">Recetas</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Compartí
+            </a>
+            <div class="dropdown-menu dropdownFondo" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="dejareceta.html">Una Receta</a>
+              <a class="dropdown-item" href="dejadelivery.html">Un Delivery</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+
+
+  </header>
+  <!-- End Header -->
+
+
+  <main>
+
+
+    <!--Selector comidas Delivery-->
+    <div class="container selectorDelivery">
+      <div class="row">
+        <p class="mensajeAccion"> Elegí una comida y te recomiendo dónde pedirla:</p>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <!-- Boton delivery Pasta -->
+        <button type="button" class="btn btn-danger btnColor mb-3 " data-toggle="modal" data-target="#modalPasta">
+          <img src="Imagenes/botones/botonPasta.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Pasta-->
+        <div class="modal fade" id="modalPasta" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalPasta">Si querés comer pastas:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p> Te recomiendo pedir en <br> Aquiles </p>
+
+                <p> Podés encontrarlos en Avenida de los Incas 4971</p>
+
+                <p> La especialidad son las pastas al fierrito</p>
+
+                <p> Pedí al 4898-8878 o haciendo click <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/aquiles-urquiza-avenida-de-los-inca-menu"> acá </a> </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Boton delivery Pizza -->
+        <button type="button" class="btn btn-danger btnColor mb-3 offset-md-1" data-toggle="modal" data-target="#modalPizza">
+          <img src="Imagenes/botones/botonPizza.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Pizza-->
+        <div class="modal fade" id="modalPizza" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalPizza">Si queres comer Pizza:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p> Te recomiendo pedir en <br>Colli </p>
+
+                <p> Podés encontrarlos en Avenida de los Incas 4711</p>
+
+                <p> La especialidad es la pizza a la piedra</p>
+
+                <p> Pedí al 4524-2151 o haciendo click <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/colli-menu"> acá </a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex mb-3 justify-content-center">
+        <!-- Boton delivery Pan -->
+        <button type="button" class="btn btn-danger btnColor mb-3" data-toggle="modal" data-target="#modalPan">
+          <img src="Imagenes/botones/botonPan.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Pan-->
+        <div class="modal fade" id="modalPan" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalPan">Si querés comer pan:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p> Te recomiendo pedir en <br> <a href="https://www.instagram.com/dulce_permiso/?hl=es">Un dulce Permiso </a></p>
+
+                <p> Podés encontrarlos en Avenida Triunvirato 4099</p>
+
+                <p> La especialidad son las Pau au chocolat</p>
+
+                <p> Pedí al 4522-6546 </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Boton delivery Hamburguesa -->
+        <button type="button" class="btn btn-danger btnColor mb-3 offset-md-1" data-toggle="modal" data-target="#modalHamburguesa">
+          <img src="Imagenes/botones/botonHamburguesa.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Pan-->
+        <div class="modal fade" id="modalHamburguesa" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalHamburguesa">Si querés comer Hamburguesa:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p> Te recomiendo pedir en <br> <a href="https://www.instagram.com/gamarra.hamburgueseria/?hl=es-la"> Gamarra </a></p>
+
+                <p> Podés encontrarlos en Avenida de los Incas 4699</p>
+
+                <p> La especialidad es la hamburguesa de falafel</p>
+
+                <p> Pedí al 4523-6955 o haciendo click <a href="https://api.whatsapp.com/send?phone=5491140240161"> acá </a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <!-- Boton delivery Taco -->
+        <button type="button" class="btn btn-danger btnColor mb-3 " data-toggle="modal" data-target="#modalTaco">
+          <img src="Imagenes/botones/botonTaco.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Tacos-->
+        <div class="modal fade" id="modalTaco" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalTaco">Si querés comer Tacos:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p> Te recomiendo pedir en <br> <a href="http://lafabricadeltaco.com/"> La fábrica del taco</a></p>
+
+                <p> Podés encontrarlos en Donado 1830</p>
+
+                <p> La especialidad son los Burrito Pastor</p>
+
+                <p> Pedí al 5356-1270 o haciendo click <a href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/la-fabrica-del-taco---villa-urquiza-menu"> acá </a> </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Boton delivery Ensalada -->
+        <button type="button" class="btn btn-danger btnColor mb-3 offset-md-1" data-toggle="modal" data-target="#modalEnsalada">
+          <img src="Imagenes/botones/botonEnsalada.png"></img>
+        </button>
+
+        <!-- Modal informacion delivery Ensalada-->
+        <div class="modal fade" id="modalEnsalada" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header modalEstilo">
+                <h5 class="modal-title" id="modalEnsalada">Si querés comer Ensaladas:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body modalEstilo">
+                <p>Todavía no encontré un buen lugar de ensaladas por acá</p>
+
+                <p> Si conocés alguno, recomendamelo <a href="dejadelivery.html">acá</a></p>
+                  
+                
+              </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <!--Fin selector comidas Delivery-->
+
+  </main>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+
+          <div>
+            <div class="footer-info">
+              <h3>de Nicolás Perednik<span>.</span></h3>
+              <p>
+                Villa Urquiza <br>
+                CABA, Argentina<br><br>
+                <strong>Teléfono:</strong> +54 9 1132021096<br>
+                <strong>Email:</strong> <a href="mailto:perednikn@gmail.com">perednikn@gmail.com</a><br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="http://www.twitter.com/asimasfacil" class="twitter" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com/asimasfacil" class="instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5491132021096" class="whatsapp" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Navegá en mi web</h4>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="recetas.html">Recetas</a></li>
+              <li><a href="deliverys.html">Deliverys</a></li>
+              <li><a href="dejareceta.html">Dejá una receta</a></li>
+              <li><a href="dejareceta.html">Dejá un delivery</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyleft <strong><span>NP</span></strong>. <br> Todas las recetas son para compartir
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/72e75abc71.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
